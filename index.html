@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    >
+</head>
+<body>
+    <section id="main">
+        <div id="main-card" class="gradient-background">
+            <div id="navbar" class="gradient-background">
+                <div id="hamburger">&#9776;</div>
+                <h3 id="my-page-header">My Page</h3>
+                <nav id="navigation">
+                    <ul class="navigation-list">
+                        <li><button id="theme-toggle"><i class="fas fa-adjust" id="dark_theme" style="color: #ffc72c;"></i></button></li>
+                        <li><a href="#main">main</a></li>
+                        <li><a href="#experience">experience</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="intro">
+                <div id="kitty-pic-container">
+                    <img src="./img/kitty.jpg" id="kitty-pic" alt="cat on the bed" />
+                <div id="presaying">
+                    <h1 id="hi">Hi, My name is Gio</h1>
+                    <h3 id="proffesion">and i am a Web Developer</h4>
+                    <p id="showcase">here i will show you my stuff </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- section 2 - my experience -->
+    <section id="experience">
+        <div id="skills experience">
+            <h2 id="my-exp-header">My Experience</h2>
+            <div class="grid-container-skills">
+                <div class="grid-item" id="skill-cesese">
+                    <h3>html/css</h3> 
+                    <p> Skilled in building responsive layouts and modern UI
+                        designs that adapt seamlessly across devices and screen sizes</p>
+                </div>
+                <div class="grid-item" id="skill-javascript">
+                    <h3>javascript</h3>
+                    <p>Proficient at adding interactivity and handling dynamic 
+                        web features to create smooth, engaging user experiences.</p>
+                </div>
+                <div class="grid-item" id="skill-python">
+                    <h3>python</h3>
+                    <p>Adept in writing efficient scripts, automating repetitive tasks,
+                        and developing small-scale tools for productivity. </p>
+                </div>
+                <div class="grid-item" id="skill-SQL">
+                    <h3>SQL</h3>
+                    <p> Experienced in managing, querying, and analyzing databases to extract
+                        insights and optimize data-driven performance. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+            <!-- section 3 - about me -->
+    <section id="about">
+        <h2 id="about-me-header">about me</h2>
+        <div class="about-me background-color-catalan" >
+            <div class="photo-border">
+                <img src="./img/WhatsApp Image 2025-10-27 at 20.06.32_08e48c45.jpg" id="about-me-photo" alt="me">
+            </div>
+                
+            <p id="about-me-paragraph">Hey there — I’m Giorgi 👋 <br>
+                                           I’m on an exciting journey to become a full-stack web developer, <br> combining creativity and
+                                           logic to build things that actually make life easier (and look good doing it). <br> I’m all about
+                                           learning, growing, and turning skills into something meaningful — ideally a remote, high-
+                                           income career that gives me both freedom and purpose. <br>
+                                           <br>
+                                           When I’m not coding or exploring new tech, you’ll probably find me playing intellectual
+                                           games, watching football, or diving into video games that mix great storytelling with
+                                           smart design. <br> I love challenges — whether it’s debugging code, solving quiz questions, or
+                                           outsmarting someone in a strategy game. <br>
+                                           I’d describe myself as curious, persistent, and quietly competitive — I like to figure things
+                                           out on my own but also enjoy sharing ideas and learning from others. <br> I believe progress
+                                           comes from consistent effort, not shortcuts, and that every skill is just one small daily
+                                           improvement away from mastery. <br>
+                                           <br>
+                                           Thanks for stopping by — feel free to stick around and see where this journey takes me 🚀
+
+            </p>
+            
+        </div>
+    </section>
+            <!-- section 4 - contact -->
+        <section id="contact">
+            <div class="contact-card">
+                
+                <h2 id="contact-me-header">contact me</h2>
+                    
+                    <div class="contact-me-container">
+                        
+                        <div class="grid-container-contactme">
+                            <div class="grid-item-contactme Phone"><i class="fa-solid fa-phone"></i><span> Phone</span></div>
+                            <div class="grid-item-contactme GitHub"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+                            <div class="grid-item-contactme LinkedIn"><i class="fab fa-linkedin"></i><span>LinkedIn</span></div>
+                        </div>
+
+                        <form id="email_form">
+                            
+                            <div id="name_row">
+                                <input type="text" name="First Name" placeholder="First Name" id="first_name" required>
+                                <input type="text" name="Last Name" placeholder="Last Name" id="last_name" required>
+                            </div>
+                            
+                            <input type="email" name="email" placeholder="Email" autocomplete="email" id="email_input" required>
+                            
+                            <textarea name="email text" placeholder="Speak Human..." id="email_text_input" required></textarea>
+                            
+                            <input type="submit" value="Send" id="email_submit">
+                        </form>
+                    </div>
+            </div>
+        </section>
+
+            <!-- section 5 - footer -->
+            <div>
+                <footer id="footer">©2025 Giorgi Gorgiladze. All rights reserved. </footer>
+            </div>  
+    <script>
+        const navbar = document.getElementById('navbar');
+        const hamburger = document.getElementById('hamburger');
+
+        hamburger.addEventListener('click', () => {
+        navbar.classList.toggle('open'); // toggles the menu
+    });
+    </script>
+    
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+
+        toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+        });
+        </script>
+    </body>
+</html>
